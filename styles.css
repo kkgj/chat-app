@@ -75,3 +75,16 @@ button{
 #messages{
     margin: 15px 0px 10px 0px; 
 }
+
+.purple-button{
+    background-color: #aa96da ;
+	box-shadow: 0 4px #7765a0;
+}
+
+.purple-button:hover{
+    box-shadow: 0 2px #7765a0;
+}
+
+.purple-button:active{
+    box-shadow: 0 0 #7765a0;
+}
