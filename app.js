@@ -1,4 +1,3 @@
-
 var db = firebase.firestore();
 if (localStorage.getItem('name')) {
     name = localStorage.getItem('name');
