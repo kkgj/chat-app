@@ -28,7 +28,7 @@ document.querySelector('#message-form').addEventListener('submit', e => {
     }); 
 });
 
-db.collection('messages').onSnapshot(snapshot => {
+db.collection('messages').orderBy('date', 'asc').onSnapshot(snapshot => {
     document.querySelector('#messages').innerHTML = '';
     snapshot.forEach(doc => {
         let message = document.createElement('div');
