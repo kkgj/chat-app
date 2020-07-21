@@ -64,3 +64,14 @@ button{
 .orange-button:hover{
     box-shadow: 0 2px #d19c57;
 }
+
+#messages > div{
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    margin: 10px 0px 10px 0px; 
+    padding: 10px;
+}
+
+#messages{
+    margin: 15px 0px 10px 0px; 
+}
