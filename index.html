@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="user-options">
+            <div>Hi, <span id="name"></span></div>
+            <div id="change-name">change name</div>
+        </div>
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="message" required>
+            <button class="orange-button">send</button>
+        </form>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyACkYvm8t9vAscandf08M14DWcpSMXtOZA",
+            authDomain: "chat-app--desktop-version.firebaseapp.com",
+            databaseURL: "https://chat-app--desktop-version.firebaseio.com",
+            projectId: "chat-app--desktop-version",
+            storageBucket: "chat-app--desktop-version.appspot.com",
+            messagingSenderId: "224944114456",
+            appId: "1:224944114456:web:5a8dc6e843fb8cab876c6d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
