@@ -43,3 +43,13 @@ db.collection('messages').orderBy('date', 'asc').onSnapshot(snapshot => {
     });
 });
 
+document.querySelector('#clear').addEventListener('click', () => {
+    db.collection("messages").get().then(snapshot => {
+        snapshot.forEach(doc => {
+            db.collection('messages').doc(doc.id).delete()
+            .then(() => {console.log('Document successfully deleted!')})
+            .catch(error => {console.log(error)});
+        });
+    }).catch(error => {console.log(error)});
+});
+
